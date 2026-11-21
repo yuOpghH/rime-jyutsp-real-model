@@ -1,0 +1,6 @@
+patch:
+  engine/filters/+:
+    - lua_filter@*aux_code@cangjie5_quick_code
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;'
+  key_binder/+:
+    aux_code_trigger: "'"  # 使用'作为辅助码触发键
