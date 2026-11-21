@@ -29,7 +29,7 @@
 ## 使用
 
  - pc windows rime
-   - 下載安裝[Rime](https://rime.im/)，下載[本方案](https://github.com/yuOpghH/rime-jyutsp-real/releases/tag/1.0)，部署到“用户文件夾”，“輸入法設定”選中本方案，部署即可
+   - 下載安裝[Rime](https://rime.im/)，下載[本方案](https://github.com/yuOpghH/rime-jyutsp-real-model/releases/tag/1.0)，部署到“用户文件夾”，“輸入法設定”選中本方案，部署即可
      
 -----
  - android（安卓） trime skin 27鍵主題
