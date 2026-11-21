@@ -1,13 +1,22 @@
-# rime-jyutsp-real 粵語雙拼輸入法（純雙拼真雙拼方案）
+# rime-jyutsp-real-model 粵語雙拼輸入法（真雙拼+語言模型方案）
 
-   以真雙拼碼表實現 [jyutsp粵語雙拼](https://github.com/MrCorn0-0/jyutsp/) 的純雙拼方案，非以拼寫運算。
+<div align="center">
+
+###### 真雙拼+有模型方案（本方案） | [真雙拼+無模型方案](https://github.com/yuOpghH/rime-jyutsp-real)
+
+</div>
+
+   以真 [jyutsp粵語雙拼](https://github.com/MrCorn0-0/jyutsp/)雙拼碼表 的純雙拼方案，搭配[jyut_small語言模型](https://github.com/yuOpghH/rime-jyut_small_ngram)，改善長句輸出體驗。並搭配倉頡輔助碼篩選模式（可選輔助形碼）。
    
-   原則上不依賴任何其他方案，甚至連反查不需要、反查文檔都可以不需要。（提供反查文檔自助選擇下載適用）
+   默認輸出香港標準字體。
+
+   反查：`Q:`倉頡反查 `W:`粵拼反查 `E:`普拼反查（假如有選用的話）。`'`鍵觸發篩選模式。
    
-   默認輸出台灣標準正體、僅提供最基礎單字快碼。極簡配置：無有固定字詞、無簡拼、最簡詞表。
+<p align="center">
+<img src="https://github.com/yuOpghH/rime-jyutsp-real-model/blob/main/%E5%B1%95%E7%A4%BA%E5%9C%96%E7%89%87/2026-11-21.png"  style="width:500px;"/>
+</p>
 
-   反查：`Q:`倉頡反查 `W:`粵拼反查 `E:`普拼反查（假如有選用的話）
-
+---
 
 ##### 感興趣的話歡迎瀏覽其他方案版本：
 
@@ -18,6 +27,7 @@
 | [jyutsp-goi<br>粵語雙拼<br>倉頡輔助碼](https://github.com/yuOpghH/rime-jyutsp-goi)  | 較高。120個倉頡字根 | 三千字內5.8% | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## 使用
+
  - pc windows rime
    - 下載安裝[Rime](https://rime.im/)，下載[本方案](https://github.com/yuOpghH/rime-jyutsp-real/releases/tag/1.0)，部署到“用户文件夾”，“輸入法設定”選中本方案，部署即可
      
@@ -38,6 +48,7 @@
 
 [zhihu]:https://github.com/yuOpghH/rime-jyutsp-goi/blob/main/%E5%B1%95%E7%A4%BA/keyboard.jpg "碼表"
 
+
 - 鍵位與原雙拼方案碼表的差異：
   - j鍵開頭的音節變成以y鍵輸出為主
   - j鍵兼容y鍵聲母輸出(而非兼容z鍵)
@@ -45,14 +56,13 @@
 
 - 語言模型
   詳細參數或指南、參考[Jyut_small語言模型](https://github.com/yuOpghH/rime-jyut_small_ngram)
+  - 已知限制
+    雙拼大量壓縮編碼空間後，模型命中率不如全拼方案適用。基於rime的切分緣故，輔助碼採用真碼表方案的話，模型作為幾近為零，因此目前採用lua篩選模式。
 
 - 輔助碼篩選
+  
   輸入音碼兩字後，打`'`開啟篩選模式，篩選碼使用倉頡。
 
-#### 展示
-<p align="center">
-<img src=" "  style="width:500px;"/>
- 
 # 學習文檔
 沿用[jyutsp_goi粵語雙拼倉頡輔助碼輸入法](https://github.com/yuOpghH/rime-jyutsp_goi)的說明文檔：
 
