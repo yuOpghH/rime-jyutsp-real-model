@@ -13,7 +13,8 @@
    反查：`Q:`倉頡反查 `W:`粵拼反查 `E:`普拼反查（假如有選用的話）。`'`鍵觸發篩選模式。
    
 <p align="center">
-<img src="https://github.com/yuOpghH/rime-jyutsp-real-model/blob/main/%E5%B1%95%E7%A4%BA%E5%9C%96%E7%89%87/2026-11-21.png"  style="width:500px;"/>
+<img src="https://github.com/yuOpghH/rime-jyutsp-real-model/blob/main/%E5%B1%95%E7%A4%BA%E5%9C%96%E7%89%87/2026-11-21.png"  style="width:500px;"/></br>
+<img src="https://github.com/yuOpghH/rime-jyutsp-real-model/blob/main/%E5%B1%95%E7%A4%BA%E5%9C%96%E7%89%87/2026-11-21%2010.png"  style="width:400px;"/>
 </p>
 
 ---
